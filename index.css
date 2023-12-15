@@ -1,0 +1,134 @@
+body {
+    font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: #00f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header img.left{
+    left: 10px;
+}
+
+header img.right{
+    right: 10px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+section img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+section .content {
+    flex: 1;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav {
+    font-family: 'Courier New', Courier, monospace, 'Times New Roman', Times, serif;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin: 0;
+    padding: 15px 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav li:hover{
+    background-color: blue;
+}
+nav a:hover {
+    color: #fff;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+footer {
+   display: flex;
+   justify-content: flex-end;
+    font-family: cursive, 'Times New Roman', Times, serif,Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #777;
+    color: #ddd;
+    text-align: right;
+    padding: 0px;
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+}
+.social-icons a {
+    margin: 5px 0px;
+}
+#maincontact{
+    display: flex;
+    border: 1px solid #ff0000;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.contactus{
+    text-align: center;
+    height: auto;
+    width: 33%;
+
+}
+.contactus img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50% ; 
+}
